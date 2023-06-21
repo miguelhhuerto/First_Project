@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inline Blocks</title>
+    <style>
+        li {
+            /*change block to inline for horizontal nav*/
+            display: inline;
+        }
+
+        li a {
+            padding-right: 20px;
+        }
+
+        img {
+            display: block;
+            /*put in middle*/
+            /*only works for block*/
+            margin:auto;
+        }
+
+        .box {
+            /*use width to display horizontal*/
+            width: 32%;
+            /*but you cant use width on inline*/
+            display: inline-block;
+            background: #f4f4f4;
+            padding: 20px;
+            box-sizing: border-box;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#">Technology</a></li>
+        <li><a href="#">Business</a></li>
+        <li><a href="#">Fashion</a></li>
+    </ul>
+
+    <br><br>
+
+    <img src="./stars.png" alt="My Image">
+
+    <br><br>
+    <div class="box">
+        <h3>Heading</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, aperiam at beatae blanditiis eaque earum excepturi laudantium nostrum soluta ut?</p>
+    </div>
+
+    <div class="box">
+        <h3>Heading</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum iste iure odit suscipit! Asperiores atque error exercitationem, fugit hic itaque mini</p>
+    </div>
+
+    <div class="box">
+        <h3>Heading</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi culpa est expedita incidunt laboriosam nam quas saepe sint sit, voluptates?</p>
+    </div>
+
+</body>
+</html>
